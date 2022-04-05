@@ -1,0 +1,14 @@
+Source/Deliveroo.CronEx.Parser.App/obj/
+Source/Deliveroo.CronEx.Parser.Infrastructure/obj
+Source/Deliveroo.CronEx.Parser.App/obj
+Source/Deliveroo.CronEx.Parser.App/bin/
+Source/Deliveroo.CronEx.Parser.Core/bin/
+Source/Deliveroo.CronEx.Parser.Core/obj
+Source/Deliveroo.CronEx.Parser.Infrastructure/bin
+Tests/Deliveroo.CronEx.Parser.Acceptance.Tests/bin
+Tests/Deliveroo.CronEx.Parser.Acceptance.Tests/obj
+Tests/Deliveroo.CronEx.Parser.App.Tests/bin
+Tests/Deliveroo.CronEx.Parser.App.Tests/obj
+Tests/Deliveroo.CronEx.Parser.Infrastructure.Tests/bin
+Tests/Deliveroo.CronEx.Parser.Infrastructure.Tests/obj
+.vs
