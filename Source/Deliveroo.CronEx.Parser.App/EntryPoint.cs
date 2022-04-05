@@ -15,26 +15,41 @@ namespace Deliveroo.CronEx.Parser.App
         }
         public void Run(string[] args)
         {
-            Console.WriteLine("Deliveroo Cron Expression Parser App Started Successfully!\n\n");
-
-            var exit = false;
-            while (!exit)
+            if (args?.Length > 0)
             {
-                Console.Write("Cron Expression:");
-                var cronExpression = Console.ReadLine();
-                if(string.Equals(cronExpression, "exit", StringComparison.OrdinalIgnoreCase))
-                {
-                    exit = true;
-                }
-
                 try
                 {
-                    var parseCronExpression = this._cronExpression.Parse(cronExpression);
+                    var parseCronExpression = this._cronExpression.Parse(args[0]);
                     this._cronExpression.Print();
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
+                }
+            }
+            else
+            {
+                Console.WriteLine("\n\n");
+
+                var exit = false;
+                while (!exit)
+                {
+                    Console.Write("Cron Expression:");
+                    var cronExpression = Console.ReadLine();
+                    if (string.Equals(cronExpression, "exit", StringComparison.OrdinalIgnoreCase))
+                    {
+                        exit = true;
+                    }
+
+                    try
+                    {
+                        var parseCronExpression = this._cronExpression.Parse(cronExpression);
+                        this._cronExpression.Print();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
                 }
             }
         }

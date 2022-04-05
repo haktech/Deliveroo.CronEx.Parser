@@ -39,9 +39,7 @@ For example, the following input argument:
   2. Open Windows Command Prompt
   3. CD to the App project folder of the cloned repo: ..\Deliveroo.CronEx.Parser\Source\Deliveroo.CronEx.Parser.App
   4. RUN COMMAND: dotnet build
-  5. RUN COMMAND: dotnet run
-  7. Key in your cron expression
-  8. If you wish to exit, type exit
+  5. RUN COMMAND: dotnet run "*/15 0 1,15 * 1-5 /usr/bin/find"
   6. Enjoy!
 
 ## Tech stacks:
