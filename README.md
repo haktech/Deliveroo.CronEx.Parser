@@ -6,6 +6,9 @@ This is a simple console app for parsing a cron expression and expands each fiel
 to show the times at which it will run. 
 
 For example, the following input argument:
+*/15 0 1,15 * 1-5 /usr/bin/find
+
+Should yield the following output:
 ```
 | Time Fields   | Expanded valus              |
 | --------------|-----------------------------|
